@@ -31,8 +31,6 @@ function CategoryPage() {
   if (loading) return <div>Loading...</div>;
   if (error) return <div>Error!</div>;
 
-  console.log(data);
-
   return (
     <div className="py-5">
       <Container>

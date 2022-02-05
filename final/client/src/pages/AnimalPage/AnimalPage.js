@@ -31,7 +31,7 @@ function AnimalPage() {
     if(loading) return <div>loading...</div>
 
     if(error) return <div>error...</div>
-    console.log(data)
+    (data)
 
     return (
         <div className="py-5">
