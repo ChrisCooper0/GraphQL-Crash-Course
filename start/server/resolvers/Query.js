@@ -1,5 +1,5 @@
 const Query = {
-  mainCards: () => mainCards,
+  mainCards: (parent, args, { mainCards }) => mainCards,
   animals: (parent, args, { animals }) => animals,
   // Query for a specific animal
   animal: (_, { slug }, { animals }, ___) => {
