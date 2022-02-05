@@ -62,6 +62,20 @@ const resolvers = {
       return category;
     },
   },
+  Category: {
+    animals: (parent, _, __) => {
+      return animals.filter((animal) => {
+        return animal.category === parent.id;
+      });
+    },
+  },
+  Animal: {
+    category: (parent, _, __) => {
+      return categories.find((category) => {
+        return category.id === parent.category;
+      });
+    },
+  },
 };
 
 // The ApolloServer constructor requires two parameters: your schema
